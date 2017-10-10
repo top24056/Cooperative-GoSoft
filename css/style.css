@@ -1,0 +1,29 @@
+html{
+    background : linear-gradient(to right,white,#C0C1C3)
+    
+}
+
+
+.centerLeftRight{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+    
+
+.imgindex{
+    height : 75%;
+}
+
+
+
+
+@media screen and (max-width: 802px){
+    .row{
+        margin-right : 0;
+    }
+}
+
+
+
+
