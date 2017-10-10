@@ -1,150 +1,119 @@
-@import "bourbon";
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+// Not using brand font, Roboto is close enough to simulate.
+
 
 body {
-  height: 100%;
-  width: 100%;
-  background-color: black;
+	background-color: #333;
+	color: #fff;
+	font-family: 'Roboto', Arial;
+	padding: 10em;
 }
 
-.btn-cont {
-  text-align: center;
-  margin-top: 200px;
-  
-  .btn {
-    position: relative;
-    padding: 20px 70px;
-    border: 1px solid white;
-    color: white;
-    text-decoration: none;
-    font-size: em(18px);
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    -webkit-font-smoothing: antialiased;
-    
-    &:hover {
-      border: none;
-      
-      .line-1 {
-        animation: move1 1500ms infinite ease;
-      }
-      
-      .line-2 {
-        animation: move2 1500ms infinite ease;
-      }
-      
-      .line-3 {
-        animation: move3 1500ms infinite ease;
-      }
-      
-      .line-4 {
-        animation: move4 1500ms infinite ease;
-      }
-    }
-  }
-  
-  .line-1 {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 1px;
-    background-color: white;
-    left: 0;
-    bottom: 0;
-  }
-  .line-2 {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 1px;
-    background-color: white;
-    left: 0;
-    top: 0;
-  }
-  .line-3 {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 1px;
-    background-color: white;
-    right: 0;
-    top: 0;
-  }
-  .line-4 {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 1px;
-    background-color: white;
-    right: 0;
-    bottom: 0;
-  }
+.flex-grid-center {
+	display: flex;
+	justify-content: center;
+	margin: 5em 0;
 }
 
-@keyframes move1 {
-  0% {
-    height: 100%; 
-    bottom: 0;
-  }
-  54% {
-    height: 0; 
-    bottom: 100%;
-  }
-  55% {
-    height: 0; 
-    bottom: 0;
-  }
-  100% {
-    height: 100%; 
-    bottom: 0;
-  }
+
+.fuller-button {
+	color: rgba(255,255,255,1);
+	background: none;
+	border-radius: 0;
+	padding: 1.2em 5em;
+	letter-spacing: 0.35em;
+	font-size: 0.7em;
+	transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+	margin: 1em;
+	
+	&.blue {
+		box-shadow: inset 0 0 1em rgba(0,170,170,0.5), 0 0 1em rgba(0,170,170,0.5);
+		border: #0dd solid 2px;
+	}
+	
+	&.blue:hover {
+		background-color: #0dd;
+		box-shadow: inset 0 0 0 rgba(0,170,170,0.5), 0 0 1.5em rgba(0,170,170,0.7);
+	}
+	
+	&.red {
+		box-shadow: inset 0 0 1em rgba(251,81,81,0.4), 0 0 1em rgba(251,81,81,0.4);
+		border: #fb5454 solid 2px;
+	}
+	
+	&.red:hover {
+		background-color: #fb5454;
+		box-shadow: inset 0 0 0 rgba(251,81,81,0.4), 0 0 1.5em rgba(251,81,81,0.6);
+	}
+	
+	&.white {
+		box-shadow: inset 0 0 0.8em rgba(255,255,255,0.3), 0 0 0.8em rgba(255,255,255,0.3);
+		border: #fff solid 2px;
+	}
+	
+	&.white:hover {
+		color: rgba(0,0,0,0.8);
+		background-color: #fff;
+		box-shadow: inset 0 0 0 rgba(255,255,255,0.3), 0 0 1.2em rgba(255,255,255,0.5);
+	}
 }
 
-@keyframes move2 {
-  0% {
-    width: 0;
-    left: 0;
-  }
-  50% {
-    width: 100%; 
-    left: 0;
-  }
-  100% {
-    width: 0; 
-    left: 100%;
-  }
-}
 
-@keyframes move3 {
-  0% {
-    height: 100%; 
-    top: 0;
-  }
-  54% {
-    height: 0; 
-    top: 100%;
-  }
-  55% {
-    height: 0; 
-    top: 0;
-  }
-  100% {
-    height: 100%; 
-    top: 0;
-  }
-}
+/////// Below is not in scss yet. Yet. - work in progress
 
-@keyframes move4 {
-  0% {
-    width: 0; 
-    right: 0;
-  }
-  55% {
-    width: 100%; 
-    right: 0;
-  }
-  100% {
-    width: 0; 
-    right: 100%;
-  }
-}
+.pure-control-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding: 0 1em 2.6em 1em; }
+
+.pure-form .pure-control-group label {
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: 15%;
+  z-index: 0;
+  letter-spacing: 0;
+  margin: 0 1em; }
+
+.pure-form .pure-control-group input {
+  background: none;
+  box-shadow: none;
+  padding-left: 0;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+  z-index: 1;
+  color: #fff; }
+  .pure-form .pure-control-group input:focus {
+    border-bottom: 2px solid white; }
+
+.pure-form .pure-control-group textarea {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  border-left: 2px solid rgba(255, 255, 255, 0.4);
+  resize: none;
+  height: 8em;
+  color: #fff; }
+  .pure-form .pure-control-group textarea:focus {
+    border-left: 2px solid white; }
+
+.pure-form .pure-control-group input[type=email]:focus:invalid {
+  color: #fff; }
+
+.pure-form .pure-control-group input[type=email]:invalid {
+  color: #fb5454; }
+
+.pure-form button {
+  margin: 0.5em 1em; }

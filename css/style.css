@@ -1,29 +1,34 @@
-html{
-    background : linear-gradient(to right,white,#C0C1C3)
+
+
+
+body{
+    background: linear-gradient(320deg, #000000, #3b3c3b, #676968, #acacac);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 17s ease infinite;
+    -moz-animation: AnimationName 17s ease infinite;
+    -o-animation: AnimationName 17s ease infinite;
+    animation: AnimationName 17s ease infinite;
     
 }
-
-
-.centerLeftRight{
-    margin-left: auto;
-    margin-right: auto;
-
+@-webkit-keyframes AnimationName {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
 }
-    
-
-.imgindex{
-    height : 75%;
+@-moz-keyframes AnimationName {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
 }
-
-
-
-
-@media screen and (max-width: 802px){
-    .row{
-        margin-right : 0;
-    }
+@-o-keyframes AnimationName {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
 }
-
-
+@keyframes AnimationName {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
+}
 
 
