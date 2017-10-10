@@ -1,2 +1,1 @@
-# Cooperative-GoSoft
-Demo
+# CooperativeGosoft
