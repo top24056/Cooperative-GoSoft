@@ -1,15 +1,143 @@
+body{
+    background-color : white;
+}
+
+.margintop5per{
+    margin-top : 5%;
+}
+
+.abclick{
+    pointer-events:none;
+    height: 100%;
+    width: 100%;
+}
+
+.colorcenter{
+    width : 270px;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-45%,-50%);
+    z-index : 99;
+}
+
+.storecenter{
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-41%,-50%);
+    z-index : 99;
+}
+
+
+
+.middle{
+    pointer-events : none;
+    position : fixed;
+    width : 100%;
+    height : 100%;
+}
+
+.circleRoseGold {
+	width: 30px;
+	height: 30px;
+	background: #f7d0cb;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor : pointer;
+}
+
+.circleSilver{
+    width: 30px;
+	height: 30px;
+	background: #f2f2f2;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor : pointer;
+}
+
+.circleGold {
+	width: 30px;
+	height: 30px;
+	background: #c9ba93;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor : pointer;
+}
+
+.circleBlack {
+	width: 30px;
+	height: 30px;
+	background: #2f2f2f;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor : pointer;
+}
+
+.circleJetBlack {
+	width: 30px;
+	height: 30px;
+	background: black;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor : pointer;
+}
+
+.margingap1per{
+    margin-top : 1%;
+    margin-bottom : 1%;
+}
 
 .textcenter{
     text-align: center;
+    color: white;
 }
 
-body{
-    background: linear-gradient(320deg, #000000, #3b3c3b, #676968);
+.divcenter{
+    margin : 0 auto;
+}
+
+
+#backgroundcolor {
+    /* position: fixed; */
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+}
+@media screen and (max-width : 769px){
+    #backgroundcolor{
+        /* position: fixed; */
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 50%;
+        background-color: black;
+    }
+    .height50{
+        height : 50%;
+        width : 100%;
+    }
+}
+
+/* body{
+    background: linear-gradient(320deg, #000000, #383838);
     background-size: 800% 800%;
-    -webkit-animation: AnimationName 21s ease infinite;
-    -moz-animation: AnimationName 21s ease infinite;
-    -o-animation: AnimationName 21s ease infinite;
-    animation: AnimationName 21s ease infinite;
+    -webkit-animation: AnimationName 19s ease infinite;
+    -moz-animation: AnimationName 19s ease infinite;
+    -o-animation: AnimationName 19s ease infinite;
+    animation: AnimationName 19s ease infinite;
     
 }
 @-webkit-keyframes AnimationName {
@@ -31,6 +159,5 @@ body{
     0%{background-position:2% 0%}
     50%{background-position:99% 100%}
     100%{background-position:2% 0%}
-}
-
+} */
 

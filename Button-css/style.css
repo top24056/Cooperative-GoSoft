@@ -12,6 +12,7 @@
 
 .fuller-button {
   font-family: 'Roboto', Arial;
+  cursor : pointer;
   color: white;
   background: none;
   border-radius: 0;

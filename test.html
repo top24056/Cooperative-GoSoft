@@ -1,0 +1,36 @@
+<html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="/standard/bootstrap-3.3.7-dist/css/bootstrap.css">
+            <link rel="stylesheet" href="/standard/font-awesome.min.css">
+            <link rel="stylesheet" href="/css/style.css">
+            <link rel="stylesheet" href="/Button-css/style.css">
+            <link rel="stylesheet" href="/standard/animate.css">
+            <link rel="stylesheet" href="/input-css/style.css">
+            <!-- <link rel="stylesheet" href="/Slider-css/style.css"> -->
+
+            <script src="/standard/jquery-3.2.1.min.js"></script>
+            <script src="/standard/jquery.slimscroll.js"></script>
+            <script src="js/custom.js"></script>
+            
+        </head>
+        <body style = "background-color : aqua">
+            <div class = "row">
+                <div class = "col-xs-6">
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                            <input class="quantity" id="store64"  min="0" max="2" name="quantity" value="1" type="number" style = "background-color : transparent;">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+                </div>
+                <div class = "col-xs-6">
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                            <input class="quantity" id="store128" min="0" max="2" name="quantity" value="1" type="number" style = "background-color : transparent;">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+                </div>
+            </div>
+        </body>
+</html>
