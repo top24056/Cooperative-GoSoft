@@ -55,8 +55,8 @@ $(document).ready(function(){
 function colorfunction(color,sizeS,sizeM,thisfromcolor){
         console.log(thisfromcolor)
         $('#'+thisfromcolor.id).css('margin-bottom','55px');
-        $('#'+thisfromcolor.id).append("<div class = \"col-xs-12\" style = \"text-align : right\"><div class=\"number-input\"><button onclick=\"this.parentNode.querySelector('input[type=number]').stepDown()\" ></button><input class=\"quantity\" id=\"store64\"  min=\"0\" max=\"2\" name=\"quantity\" value=\"0\" type=\"number\" style = \"background-color : transparent;\"><button onclick=\"this.parentNode.querySelector('input[type=number]').stepUp()\" class=\"plus\"></button></div></div>")
-        
+        $('#'+thisfromcolor.id).append("<div class = \"col-xs-12\" id = \"buttonsize\" style = \"text-align : right\"><div class=\"number-input\"><button onclick=\"this.parentNode.querySelector('input[type=number]').stepDown()\" ></button><input class=\"quantity\" id=\"store64\"  min=\"0\" max=\"2\" name=\"quantity\" value=\"0\" type=\"number\" style = \"background-color : transparent;\"><button onclick=\"this.parentNode.querySelector('input[type=number]').stepUp()\" class=\"plus\"></button></div></div>")
+        $('#buttonsize').css('margin-top','49px');
         
         
         
